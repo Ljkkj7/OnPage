@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marigold Kitchen — Modern British, Islington</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,700;1,300;1,600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./static/styles/restaurant.css">
+</head>
+<body>
+
+<nav id="nav">
+  <a href="#" class="n-logo">Marigold Kitchen</a>
+  <ul class="n-links">
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#hours">Find Us</a></li>
+    <li><a href="#hours" class="n-book">Book a table</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="nav-drawer" id="nav-drawer">
+  <a href="#menu" class="drawer-link">Menu</a>
+  <a href="#about" class="drawer-link">About</a>
+  <a href="#hours" class="drawer-link">Find Us</a>
+  <a href="#hours" class="drawer-link drawer-book">Book a table</a>
+</div>
+<div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+<div class="hero">
+  <div class="hero-visual">
+    <div class="hero-visual-text">M</div>
+    <div class="hero-visual-badge">
+      <div class="hvb-year">2019</div>
+      <div class="hvb-label">Est. Islington</div>
+    </div>
+  </div>
+  <div class="hero-content">
+    <div class="h-eyebrow">Modern British · Islington N1</div>
+    <h1>Honest food,<br><em>beautifully</em><br>done.</h1>
+    <p>Seasonal ingredients, straightforward cooking, and a room worth lingering in. Lunch and dinner, Tuesday through Sunday.</p>
+    <div class="h-ctas">
+      <a href="#hours" class="btn-gold">Book a table</a>
+      <a href="#menu" class="btn-ghost-light">View menu</a>
+    </div>
+  </div>
+</div>
+
+<div class="marquee-strip">
+  <div class="m-track">
+    <span>Seasonal Menu</span><span class="dot">·</span><span>Natural Wines</span><span class="dot">·</span><span>Private Dining</span><span class="dot">·</span><span>Modern British</span><span class="dot">·</span><span>Islington N1</span><span class="dot">·</span><span>Open Tue–Sun</span><span class="dot">·</span>
+    <span>Seasonal Menu</span><span class="dot">·</span><span>Natural Wines</span><span class="dot">·</span><span>Private Dining</span><span class="dot">·</span><span>Modern British</span><span class="dot">·</span><span>Islington N1</span><span class="dot">·</span><span>Open Tue–Sun</span><span class="dot">·</span>
+  </div>
+</div>
+
+<section id="menu">
+  <div class="sec-inner">
+    <p class="sec-ey reveal">What we serve</p>
+    <h2 class="sec-title reveal">The menu.</h2>
+    <p class="sec-sub reveal">Seasonal and changing. Everything made in-house.</p>
+    <div class="tabs">
+      <div class="tab on" onclick="switchTab(this,'st')">Starters</div>
+      <div class="tab" onclick="switchTab(this,'ma')">Mains</div>
+      <div class="tab" onclick="switchTab(this,'de')">Desserts</div>
+      <div class="tab" onclick="switchTab(this,'dr')">Drinks</div>
+    </div>
+    <div id="st" class="panel on">
+      <div class="mi"><div class="mi-l"><div class="mi-name">Burrata & heritage tomatoes</div><div class="mi-desc">Basil oil, sea salt, sourdough</div><div class="mi-tag">V</div></div><div class="mi-price">£11</div></div>
+      <div class="mi"><div class="mi-l"><div class="mi-name">Chicken liver parfait</div><div class="mi-desc">Pickled shallots, toasted brioche</div></div><div class="mi-price">£10</div></div>
+      <div class="mi"><div class="mi-l"><div class="mi-name">Smoked mackerel rillettes</div><div class="mi-desc">Cucumber, dill crème fraîche, rye</div></div><div class="mi-price">£12</div></div>
+      <div class="mi"><div class="mi-l"><div class="mi-name">Roast cauliflower soup</div><div class="mi-desc">Hazelnut butter, chives</div><div class="mi-tag">VE</div></div><div class="mi-price">£9</div></div>
+      <div class="mi"><div class="mi-l"><div class="mi-name">Cured salmon</div><div class="mi-desc">Pickled cucumber, horseradish cream, blini</div></div><div class="mi-price">£13</div></div>
+      <div class="mi"><div class="mi-l"><div class="mi-name">Whipped feta & roast peppers</div><div class="mi-desc">Grilled flatbread, za'atar oil</div><div class="mi-tag">V</div></div><div class="mi-price">£10</div></div>
+    </div>
+    <div id="ma" class="panel">
+      <div class="mi"><div class="mi-l"><div class="mi-name">28-day aged sirloin</div><div class="mi-desc">Béarnaise, watercress, triple-cooked chips</div></div><div class="mi-price">£32</div></div>
+      <div class="mi"><div class="mi-l"><div class="mi-name">Roast cod</div><div class="mi-desc">Clam chowder, samphire, new potatoes</div></div><div class="mi-price">£26</div></div>
+      <div class="mi"><div class="mi-l"><div class="mi-name">Braised lamb shoulder</div><div class="mi-desc">White bean purée, salsa verde</div></div><div class="mi-price">£29</div></div>
+      <div class="mi"><div class="mi-l"><div class="mi-name">Wild mushroom risotto</div><div class="mi-desc">Aged parmesan, truffle oil, chives</div><div class="mi-tag">V</div></div><div class="mi-price">£22</div></div>
+      <div class="mi"><div class="mi-l"><div class="mi-name">Free-range chicken</div><div class="mi-desc">Roast garlic butter, seasonal greens, dauphinoise</div></div><div class="mi-price">£24</div></div>
+      <div class="mi"><div class="mi-l"><div class="mi-name">Whole roast cauliflower</div><div class="mi-desc">Romesco, almonds, pickled raisins</div><div class="mi-tag">VE</div></div><div class="mi-price">£20</div></div>
+    </div>
+    <div id="de" class="panel">
+      <div class="mi"><div class="mi-l"><div class="mi-name">Sticky toffee pudding</div><div class="mi-desc">Salted caramel sauce, clotted cream</div></div><div class="mi-price">£9</div></div>
+      <div class="mi"><div class="mi-l"><div class="mi-name">Dark chocolate tart</div><div class="mi-desc">Crème fraîche, candied orange</div></div><div class="mi-price">£9</div></div>
+      <div class="mi"><div class="mi-l"><div class="mi-name">Seasonal fruit crumble</div><div class="mi-desc">Custard or vanilla ice cream</div></div><div class="mi-price">£9</div></div>
+      <div class="mi"><div class="mi-l"><div class="mi-name">British cheese selection</div><div class="mi-desc">Three cheeses, chutney, crackers</div></div><div class="mi-price">£14</div></div>
+    </div>
+    <div id="dr" class="panel">
+      <div class="mi"><div class="mi-l"><div class="mi-name">House white</div><div class="mi-desc">Sauvignon Blanc, Loire Valley</div></div><div class="mi-price">£8 / £32</div></div>
+      <div class="mi"><div class="mi-l"><div class="mi-name">House red</div><div class="mi-desc">Malbec, Mendoza</div></div><div class="mi-price">£8 / £32</div></div>
+      <div class="mi"><div class="mi-l"><div class="mi-name">Natural wine selection</div><div class="mi-desc">Ask your server for today's list</div></div><div class="mi-price">From £10</div></div>
+      <div class="mi"><div class="mi-l"><div class="mi-name">Craft beer</div><div class="mi-desc">Rotating selection</div></div><div class="mi-price">£6</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="about-grid">
+    <div class="about-txt reveal">
+      <p class="sec-ey">Our story</p>
+      <h2 class="sec-title">A neighbourhood<br><em>restaurant.</em></h2>
+      <p>Marigold opened in 2019 with a simple brief: cook honest food with good ingredients, and build a room where people actually want to spend time. No concept, no gimmick.</p>
+      <p>Our menu changes with the seasons. We work with a small handful of suppliers we trust and try to waste as little as possible. V = vegetarian. VE = vegan.</p>
+      <div class="about-numbers">
+        <div><div class="an-num">2019</div><div class="an-l">Opened</div></div>
+        <div><div class="an-num">★4.8</div><div class="an-l">Google</div></div>
+        <div><div class="an-num">40</div><div class="an-l">Covers</div></div>
+      </div>
+    </div>
+    <div class="about-visual reveal"><div class="av-caption">Marigold Kitchen · Islington</div></div>
+  </div>
+</section>
+
+<section id="hours">
+  <div class="hours-grid">
+    <div class="reveal">
+      <h2 class="hours-hed">Come and<br><em>find us.</em></h2>
+      <p class="hours-sub">Reservations recommended. Walk-ins welcome when we have space.</p>
+      <ul class="hlist">
+        <li class="hrow"><span class="hday">Monday</span><span class="hclosed">Closed</span></li>
+        <li class="hrow"><span class="hday">Tue – Thu</span><span class="htime">12pm–3pm · 6pm–10pm</span></li>
+        <li class="hrow"><span class="hday">Fri – Sat</span><span class="htime">12pm–3pm · 6pm–11pm</span></li>
+        <li class="hrow"><span class="hday">Sunday</span><span class="htime">12pm–5pm</span></li>
+      </ul>
+      <div class="location-detail">📍 14 Barnsbury Street, Islington, N1 1PN<br>🚇 Highbury & Islington · 6 min walk</div>
+    </div>
+    <div class="reveal">
+      <form class="bform-wrap" onsubmit="event.preventDefault();this.querySelector('button').textContent='Booking request sent ✓';this.querySelector('button').disabled=true;">
+        <div class="bform-title">Book a table</div>
+        <p class="bform-sub">We'll confirm within 2 hours.</p>
+        <div class="frow2"><input type="text" placeholder="Name"><input type="tel" placeholder="Phone"></div>
+        <div class="frow2"><input type="date"><select><option value="">Covers</option><option>1–2</option><option>3–4</option><option>5–6</option><option>7+</option></select></div>
+        <select><option value="">Time preference</option><option>Lunch (12–3pm)</option><option>Dinner (6pm+)</option><option>Sunday lunch</option></select>
+        <input type="text" placeholder="Dietary requirements or notes">
+        <button type="submit">Request booking →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="f-logo">Marigold Kitchen</div>
+  <div class="f-copy">© 2026 Marigold Kitchen · Islington · N1</div>
+  <div class="f-credit">Site by <a href="#">OnPage</a></div>
+</footer>
+
+<script>
+  const nav=document.getElementById('nav');
+  window.addEventListener('scroll',()=>nav.classList.toggle('solid',window.scrollY>80));
+  function switchTab(el,id){
+    document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
+    document.querySelectorAll('.panel').forEach(p=>p.classList.remove('on'));
+    el.classList.add('on'); document.getElementById(id).classList.add('on');
+  }
+  const reveals=document.querySelectorAll('.reveal');
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*80);obs.unobserve(e.target);}});
+  },{threshold:0.08});
+  reveals.forEach(el=>obs.observe(el));
+</script>
+
+<script>
+  const hb = document.getElementById('hamburger');
+  const drawer = document.getElementById('nav-drawer');
+  const backdrop = document.getElementById('drawer-backdrop');
+  function openD(){ hb.classList.add('open'); drawer.classList.add('open'); backdrop.classList.add('open'); document.body.style.overflow='hidden'; drawer.style.paddingTop=document.getElementById('nav').getBoundingClientRect().height+'px'; }
+  function closeD(){ hb.classList.remove('open'); drawer.classList.remove('open'); backdrop.classList.remove('open'); document.body.style.overflow=''; }
+  hb.addEventListener('click', () => drawer.classList.contains('open') ? closeD() : openD());
+  backdrop.addEventListener('click', closeD);
+  document.querySelectorAll('.drawer-link').forEach(l => l.addEventListener('click', closeD));
+  document.addEventListener('keydown', e => { if(e.key==='Escape') closeD(); });
+</script>
+</body>
+</html>

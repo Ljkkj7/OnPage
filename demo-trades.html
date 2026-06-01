@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Briggs Plumbing & Heating — London</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./static/styles/tradestyles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <p>🔧 Fully Gas Safe Registered · No call-out fees · All London boroughs</p>
+  <p><strong>📞 020 7946 1200</strong> — Available 24/7 for emergencies</p>
+</div>
+
+<header>
+  <a href="#" class="logo">
+    <div class="logo-box">🔧</div>
+    <div class="logo-name">Briggs Plumbing<small>& Heating</small></div>
+  </a>
+  <div class="header-cta">
+    <a href="tel:02079461200" class="tel">020 7946 1200</a>
+    <a href="#contact" class="btn-sm">Free Quote</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="nav-drawer" id="nav-drawer">
+  <a href="#services" class="drawer-link">Services</a>
+  <a href="#contact" class="drawer-link">Why Choose Us</a>
+  <a href="#contact" class="drawer-link">Get a Quote</a>
+  <a href="tel:02079461200" class="drawer-link drawer-cta">📞 Call Now</a>
+</div>
+<div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div>
+      <h1>London's trusted<br><em>plumbing</em><br>specialists.</h1>
+      <p>Family-run since 1998. No call-out fees, no hidden charges — just reliable work done properly the first time.</p>
+      <div class="hero-btns">
+        <a href="tel:02079461200" class="btn-orange">📞 Call Now</a>
+        <a href="#contact" class="btn-ghost">Get a Free Quote</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-n">25+</div><div class="stat-l">Years trading</div></div>
+      <div class="stat"><div class="stat-n">★4.9</div><div class="stat-l">Google reviews</div></div>
+      <div class="stat"><div class="stat-n">24/7</div><div class="stat-l">Emergency cover</div></div>
+      <div class="stat"><div class="stat-n">Gas Safe</div><div class="stat-l">Registered</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="services">
+  <h2>Our Services</h2>
+  <ul class="service-list">
+    <li class="service-item"><span class="si-icon">🔥</span><div><div class="si-name">Boiler Installation & Replacement</div><div class="si-desc">All major brands. Full system flush and commissioning included.</div></div></li>
+    <li class="service-item"><span class="si-icon">🔧</span><div><div class="si-name">Boiler Servicing & Repairs</div><div class="si-desc">Annual service plans available. Same-day repairs where possible.</div></div></li>
+    <li class="service-item"><span class="si-icon">🚿</span><div><div class="si-name">Plumbing Repairs & Leaks</div><div class="si-desc">Burst pipes, dripping taps, blocked drains — no job too small.</div></div></li>
+    <li class="service-item"><span class="si-icon">🛁</span><div><div class="si-name">Bathroom Installation</div><div class="si-desc">Full fit-outs including tiling, fixtures, and pipework.</div></div></li>
+    <li class="service-item"><span class="si-icon">🌡️</span><div><div class="si-name">Central Heating Systems</div><div class="si-desc">New systems, power flushing, radiator upgrades.</div></div></li>
+    <li class="service-item"><span class="si-icon">🚨</span><div><div class="si-name">24/7 Emergency Call-Out</div><div class="si-desc">No premium for evenings or weekends. We always pick up.</div></div></li>
+  </ul>
+</div>
+
+<div class="two-col" id="contact">
+  <div class="why">
+    <h2>Why Choose Us</h2>
+    <ul class="why-list">
+      <li class="why-item"><span class="wi-icon">✅</span><div class="wi-text"><strong>No hidden charges</strong><span>We quote upfront. What we say is what you pay.</span></div></li>
+      <li class="why-item"><span class="wi-icon">🛡️</span><div class="wi-text"><strong>Gas Safe registered</strong><span>All gas work fully certified. Number available on request.</span></div></li>
+      <li class="why-item"><span class="wi-icon">⏱️</span><div class="wi-text"><strong>Punctual and tidy</strong><span>We show up when we say. We clean up when we're done.</span></div></li>
+      <li class="why-item"><span class="wi-icon">🔁</span><div class="wi-text"><strong>12-month guarantee</strong><span>All work guaranteed. We come back and fix it, no questions.</span></div></li>
+      <li class="why-item"><span class="wi-icon">📍</span><div class="wi-text"><strong>All London boroughs</strong><span>Based in South London, covering all areas.</span></div></li>
+    </ul>
+  </div>
+  <div class="contact-box">
+    <h2>Get a Free Quote</h2>
+    <form class="c-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='Sent ✓';this.querySelector('button').disabled=true;">
+      <input type="text" placeholder="Your name">
+      <input type="tel" placeholder="Phone number">
+      <select><option value="">Type of job</option><option>Boiler install/replacement</option><option>Boiler service/repair</option><option>Plumbing repair</option><option>Bathroom installation</option><option>Central heating</option><option>Emergency call-out</option></select>
+      <textarea rows="3" placeholder="Brief description..."></textarea>
+      <button type="submit">Send Request →</button>
+    </form>
+  </div>
+</div>
+
+<div class="guarantee">
+  <p>🛡️ All work guaranteed for 12 months · Gas Safe registered · Family run since 1998</p>
+</div>
+
+<footer>
+  <p>© 2026 Briggs Plumbing & Heating · Gas Safe Registered</p>
+  <a href="#">Site by OnPage</a>
+</footer>
+
+
+<script>
+  const hb = document.getElementById('hamburger');
+  const drawer = document.getElementById('nav-drawer');
+  const backdrop = document.getElementById('drawer-backdrop');
+  function openD(){ hb.classList.add('open'); drawer.classList.add('open'); backdrop.classList.add('open'); document.body.style.overflow='hidden'; const h=document.querySelector('header').getBoundingClientRect().height; drawer.style.paddingTop=h+'px'; }
+  function closeD(){ hb.classList.remove('open'); drawer.classList.remove('open'); backdrop.classList.remove('open'); document.body.style.overflow=''; }
+  hb.addEventListener('click', () => drawer.classList.contains('open') ? closeD() : openD());
+  backdrop.addEventListener('click', closeD);
+  document.querySelectorAll('.drawer-link').forEach(l => l.addEventListener('click', closeD));
+  document.addEventListener('keydown', e => { if(e.key==='Escape') closeD(); });
+</script>
+</body>
+</html>
